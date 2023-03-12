@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+        <title>Document</title>
+</head>
+<body>
+    <div class="block">
+        <div class="input">
+            <div class="item">
+                <p>Оставьте ваш комментарий</p>
+                    
+                <label >Введите ваше ФИО <br></label>
+                <input for="text" class="name"  id="name">
+
+                <div>
+                    <p>Показывать ваше ФИО?</p>
+                    <input type="radio" id="yes" name="radiobtn" value="yes" checked>
+                    <label for="yes"> Да </label>
+                    <input type="radio" id="no" name="radiobtn" value="no">
+                    <label for="no"> Нет </label>
+                </div>
+            </div>
+        
+            <div class="item">
+                <label>Прикрепите ваше фото <br> </label>
+                <input type="text" id= "foto" > 
+                                
+            </div>
+
+                
+            <div class="item">
+                <label >Комментарий</label>
+                <p> <textarea cols="30" rows="10" id="comment" ></textarea></p>
+            </div>
+        
+            <button class="button" onclick=" add() ">Отправить</button>
+        </div>
+           
+        <div class="output">
+            <p id = "title">Чат</p> 
+        </div>
+        
+    </div>
+
+  
+    <script src="index.js"></script>
+</body>
+</html>
+
